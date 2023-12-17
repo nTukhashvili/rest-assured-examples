@@ -41,7 +41,6 @@ public class ResponseExamples {
 
             List<Map<String, Object>> posts = postsResponse.jsonPath().getList("");
 
-            // Assuming we want the first two posts only
             posts.stream().limit(2).forEach(post -> {
                 String title = (String) post.get("title");
                 String body = (String) post.get("body");
