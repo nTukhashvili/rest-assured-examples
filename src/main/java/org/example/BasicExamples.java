@@ -28,12 +28,6 @@ public class BasicExamples {
     }
 
     @Test
-    public void gettingDataFromBody() {
-        Response response =  get("https://jsonplaceholder.typicode.com/posts");
-        System.out.println(response.body.toString());
-    }
-
-    @Test
     public void getRequest() {
         baseURI = "https://jsonplaceholder.typicode.com";
 
